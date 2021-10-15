@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reto2</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script  src="js/funciones.js"></script>
+</head>
+<body>
+    
+    
+
+    <div>
+        <h1>CLIENTES</h1>
+    </div> 
+    <div>
+        <h5>Mostrar Tabla de Clientes</h5>
+        <button onclick="consultarClientes()">Mostrar Clientes</button>
+    </div>
+    <div>
+        <h5>Agregar Cliente</h5>
+        <button onclick="insertarClientes()", style="background-color: rgb(72, 255, 0);">Insertar Clientes</button>
+        <input type="number" id="idCliente" placeholder="id"> </input>
+        <input type="text" id="nameCliente" placeholder="Name"> </input>
+        <input type="email" id="correo" placeholder="email"> </input>
+        <input type="number" id="age" placeholder="Age"> </input>
+    </div>
+    <div>
+        <h5>Borrar Cliente</h5>
+        <button onclick="borrarClientes()", style="background-color: red;">Borrar Cliente</button>
+        <input type="number" id="idClienteBorrar" placeholder="id"> </input>
+    </div>
+    <div>
+        <h5>Actualizar Cliente</h5>
+        <button  onclick="actualizarClientes()", style="background-color: rgb(0, 255, 255);">Actualizar Cliente</button>
+        <input type="number" id="idClienteActualizar" placeholder="id"> </input>
+        <input type="text" id="nameClienteActualizar" placeholder="Name"> </input>
+        <input type="email" id="correoActualizar" placeholder="email"> </input>
+        <input type="number" id="ageActualizar" placeholder="Age"> </input>
+    </div>
+        <h5>Consultar cliente por id</h5>
+        <button  onclick="consultarIdClientes()">Consultar id cliente</button>
+        <input type="number" id="idClienteConsulta" placeholder="id"> </input>
+    </div>
+    <div id="idDivConsultaC"></div>
+
+</body>
+</html>

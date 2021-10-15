@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reto2</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script  src="js/funciones.js"></script>
+</head>
+<body>
+    
+    <div>
+        <h1>MENSAJES</h1>
+    </div> 
+    <div>
+        <h5>Mostrar Tabla de Mensajes</h5>
+        <button onclick="consultarMensajes()">Mostrar Mensajes</button>
+    </div>
+    <div>
+        <h5>Insertar Mensaje</h5>
+        <button onclick="insertarMensajes()", style="background-color: rgb(72, 255, 0);">Insertar Mensaje</button>
+        <input type="number" id="idMensaje" placeholder="id"> </input>
+        <input type="text" id="mensaje" placeholder="mensaje"> </input>
+    </div>
+    <div>
+        <h5>Borrar Mensaje</h5>
+        <button onclick="borrarMensajes()", style="background-color: red;">Borrar Mensaje</button>
+        <input type="number" id="idMensajeBorrar" placeholder="id"> </input>
+    </div>
+    <div>
+        <h5>Actualizar Mensaje</h5>
+        <button  onclick="actualizarMensajes()", style="background-color: rgb(0, 255, 255);">Actualizar Mensaje</button>
+        <input type="number" id="idMensajeActualizar" placeholder="id"> </input>
+        <input type="text" id="mensajeActualizar" placeholder="mensaje"> </input>
+    </div>
+    <div>
+        <h5>Consultar mensaje por id</h5>
+        <button  onclick="consultarIdMensajes()">Consultar id Mensaje</button>
+        <input type="number" id="idMensajeConsulta" placeholder="id"> </input>
+    </div>
+
+    <div id="idDivConsultaM"></div>
+
+    
+</body>
+</html>

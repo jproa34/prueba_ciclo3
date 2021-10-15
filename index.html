@@ -1,8 +1,54 @@
+<!DOCTYPE html>
 <html>
-    <head>
+<head>
+    <title>Reto2</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script  src="js/funciones.js"></script>
+</head>
+<body>
+    <div>
+        <h1>BICICLETAS</h1>
+    </div>
+    <DIv>
+        <H5>Mostrar tabla de bicicletas</H5>
+        <button onclick="consultarBicicletas()">Mostrar Bicicletas</button>
+    </DIv>
+    
+    <div>
+        <H5>Insertar Bicicleta</H5>
+        <button onclick="insertarBicicletas()", style="background-color: rgb(72, 255, 0);">Insertar Bicicleta</button>
+        <input type="number" id="id" placeholder="id"> </input>
+        <input type="text" id="brand" placeholder="brand"> </input>
+        <input type="number" id="model" placeholder="model"> </input>
+        <input type="number" id="category" placeholder="category_id"> </input>
+        <input type="text" id="name" placeholder="name"> </input>
+    </div>
+    
+    
+    
+    <div>
+        <h5>Borrar Bicicleta</h5>
+        <button onclick="borrarBicicletas()", style="background-color: red;">Borrar Bicicleta</button>
+        <input type="number" id="idBorrar" placeholder="id"> </input>
+    </div>
+    <div>
+        <h5>Actualizar Bicicleta</h5>
+        <button  onclick="actualizarBicicletas()", style="background-color: rgb(0, 255, 255);">Actualizar Bicicleta</button>
+        <input type="number" id="idActualizar" placeholder="id"> </input>
+        <input type="text" id="brandActualizar" placeholder="brand"> </input>
+        <input type="number" id="modelActualizar" placeholder="model"> </input>
+        <input type="number" id="categoryActualizar" placeholder="category_id"> </input>
+        <input type="text" id="nameActualizar" placeholder="name"> </input>
+    </div>
+    
+    <div>
+        <h5>Consultar Bicicleta po id</h5>
+        <button  onclick="consultarIdBicicletas()">Consultar id bicicleta</button>
+        <input type="number" id="idConsulta" placeholder="id"> </input>
+    </div>
 
-    </head>
-    <body>
-        <a href="https://www.google.com/">Texto</a>
-    </body>
+    <div id="idDivConsulta"></div>
+
+    
+</body>
 </html>
